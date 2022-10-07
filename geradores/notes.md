@@ -201,21 +201,21 @@ acompanhado ao `from`
 ### Iterando em um gerador dentro de outro gerador com yield e for
 
 ```python
-In [14]: def my_gerador(ate):
+In [36]: def my_gerador(ate):
     ...:     for x in range(ate):
     ...:       yield x
     ...: 
 
-In [15]: gerador = my_gerador(100)
+In [37]: gerador = my_gerador(100)
 
-In [16]: next(gerador)
-Out[16]: 0
+In [38]: next(gerador)
+Out[38]: 0
 
-In [17]: next(gerador)
-Out[17]: 1
+In [39]: next(gerador)
+Out[39]: 1
 
-In [18]: next(gerador)
-Out[18]: 2
+In [40]: next(gerador)
+Out[40]: 2
 ```
 
 
@@ -226,22 +226,22 @@ sem ocorrer a iteração.
 Expressões geradoras nada mais é do que geradores em container.
 ```python
 # Generator expression que retorna os números ímpares de 0 a 10
-In [22]: gen = (x for x in range(10) if x % 2)
+In [41]: gen = (x for x in range(10) if x % 2)
 
-In [23]: next(gen)
-Out[23]: 1
+In [42]: next(gen)
+Out[42]: 1
 
-In [24]: next(gen)
-Out[24]: 3
+In [43]: next(gen)
+Out[43]: 3
 
-In [25]: next(gen)
-Out[25]: 5
+In [44]: next(gen)
+Out[44]: 5
 
-In [26]: next(gen)
-Out[26]: 7
+In [45]: next(gen)
+Out[45]: 7
 
-In [27]: next(gen)
-Out[27]: 9
+In [46]: next(gen)
+Out[46]: 9
 ```
 Em expressões geradoras temos um `yield` oculto que transforma o catainer em
 definitivamente um gerador, e com isso podemos itera-lo com o método next. 
