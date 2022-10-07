@@ -16,7 +16,7 @@ def funcao(parametros):
 
 >def = Palavra especial;\
 >funcao = Nome da função;\
->parametros = Parâmetros da função;\
+>parametros = Parâmetros da função;
 >
 >Tudo que estiver com a identação de quatro espaços após os dois pontos é
 >considerado como corpo da função, portanto será executado quando o código
@@ -46,7 +46,7 @@ entrada e ao mesmo tempo sujeita a um TypeError com a ausência da mesma.
 ```python
 def adicao(x, y):
     """Função simples para soma de dois parâmetros"""
-    return x + yprint(soma(1, 2))                    # Resultado = 03
+    return x + yprint(soma(1, 2))    # Resultado = 03
 ```
 
 O exemplo abaixo ilustra a função adicao que deve receber dois parâmetros de
@@ -58,7 +58,9 @@ def adicao(x, y):
     return x + y
 
 
-print(soma(2))# Resultado:
+print(soma(2))
+
+# Resultado:
 # "TypeError: soma() missing 1 required positional argument: 'y'"
 ```
 
@@ -112,6 +114,8 @@ Utilizando o for:
 
 ```python
 recebimentos = [1.2, 32.3, 40, 17.9, 137.37, 98, 47, 5, 2.5, 66]
+
+
 def caixa(*args):
     """
     Função simples para descompactar a lista recebimentos
@@ -130,6 +134,8 @@ Utilizando sum:
 
 ```python
 recebimentos = [1.2, 32.3, 40, 17.9, 137.37, 98, 47, 5, 2.5, 66]
+
+
 def caixa(*args):
     """
     Função simples para descompactar a lista recebimentos 
@@ -156,9 +162,10 @@ y e optar em passar ou não um argumento.
 ```python
 def adicao(x, y=10):
     """Função simples para soma de dois parâmetros"""
-    return x + yprint(soma(1))                       # Resultado = 11
+    return x + y
+    
 
-
+print(soma(1))                       # Resultado = 11
 print(soma(1, 2))                    # Resultado = 03
 ```
 
